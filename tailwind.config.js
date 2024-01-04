@@ -1,4 +1,8 @@
-/* eslint-disable no-undef */
+import TypoPlugin from "@tailwindcss/typography";
+import FormsPlugin from "@tailwindcss/forms";
+import ContainerQueriesPlugin from "@tailwindcss/container-queries";
+import AspectRationPlugin from "@tailwindcss/aspect-ratio";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./components/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
@@ -26,9 +30,9 @@ export default {
     },
   },
   plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/container-queries"),
+    TypoPlugin,
+    FormsPlugin,
+    ContainerQueriesPlugin,
+    AspectRationPlugin,
   ],
 };
