@@ -64,7 +64,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ConfigProvider theme={antdTheme}>
-      <StyleProvider hashPriority="high">
+      <StyleProvider hashPriority="low">
         <RouterProvider router={router} />
       </StyleProvider>
     </ConfigProvider>

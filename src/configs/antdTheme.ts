@@ -5,6 +5,7 @@ export const antdTheme: ThemeConfig = {
     Typography: {
       fontFamily: `'Dosis', sans-serif`,
       fontSize: 16,
+      colorText:"#FFFFFF"
     },
   },
 };

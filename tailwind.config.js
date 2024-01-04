@@ -5,7 +5,7 @@ import AspectRationPlugin from "@tailwindcss/aspect-ratio";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./components/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: ["./components/**/*.{ts,tsx}", "./src/**/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     screens: {
       sm: "640px",
@@ -35,4 +35,7 @@ export default {
     ContainerQueriesPlugin,
     AspectRationPlugin,
   ],
+  corePlugins: {
+    preflight: false,
+  },
 };
