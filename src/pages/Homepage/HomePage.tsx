@@ -5,6 +5,9 @@ import BannerSection from "./BannerSection/BannerSection";
 import VeChungToiSection from "./VeChungToiSection/VeChungToiSection";
 import ListSectionBar from "@/components/ListSectionBar/ListSectionBar";
 import TinTucSection from "./TinTucSection";
+import LinhVucSection from "./LinhVucSection";
+import DuAnSection from "./DuAnSection";
+import FooterSection from "./FooterSection";
 
 // https://github.com/VikLiegostaiev/react-page-scroller/tree/master
 
@@ -46,6 +49,9 @@ const HomePage = () => {
         <BannerSection />
         <VeChungToiSection />
         <TinTucSection />
+        <LinhVucSection />
+        <DuAnSection />
+        <FooterSection />
       </ReactPageScroller>
 
       <div style={{ position: "absolute", right: "2rem", top: "100px" }}>

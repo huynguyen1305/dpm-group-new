@@ -7,9 +7,10 @@ const VeChungToiSection = () => {
     <section className="h-full w-full bg-[#fff] p-10 flex">
       <div className="w-[15%] bg-inherit"></div>
       <div className={cn(styles.corner_top_curved, "w-[85%] relative")}>
-        {/* Note: do style hình thang đụng tới cái border và nó ăn hết diện tích của cái div nên cái top absolute này sẽ hơi lớn... */}
-        <div className="absolute w-full right-[20%] top-[calc(100%+800%)] flex flex-col gap-10 h-full">
-          <Typography className="text-[60px] font-extrabold">| VỀ CHÚNG TÔI</Typography>
+        <div className="absolute w-full right-[20%] top-[30vh] flex flex-col gap-10 h-full">
+          <Typography className="text-[60px] font-extrabold">
+            | VỀ CHÚNG TÔI
+          </Typography>
           <Typography className="text-white">
             Từ ngày thành lập 2010 và phát triển đến nay, DPM đã vượt qua hàng
             ngàn thách thức, khắc phục mọi khó khăn để khẳng định mình là một

@@ -12,13 +12,18 @@ const TinTucSection = () => {
         backgroundImage: `url(${backgroundHomepage})`,
       }}
     >
-      <div className="container flex flex-col gap-10">
+      <div className="container flex flex-col gap-10 max-h-[800px]">
         <Typography className="text-[60px] font-extrabold">
           | TIN TỨC
         </Typography>
         <Flex items="center" gap={40}>
           <Flex vertical className="w-2/5">
-            <Image alt="img" src={cardImage1} preview={false} />
+            <Image
+              alt="img"
+              src={cardImage1}
+              preview={false}
+              className="max-h-[720px]"
+            />
             <Flex vertical className="bg-white p-10" gap={20}>
               <Typography className="text-4xl font-semibold text-[#354B99]">
                 Lorem ipsum dolor sit amet
@@ -36,7 +41,7 @@ const TinTucSection = () => {
               </div>
             </Flex>
           </Flex>
-          <Row gutter={[20, 20]} className="w-3/5" align="middle">
+          <Row gutter={[20, 20]} className="w-3/5 h-full" align="middle">
             <Col span={24}>
               <Flex>
                 <div className="flex items-center w-full">
@@ -46,7 +51,7 @@ const TinTucSection = () => {
                     preview={false}
                     className="h-full"
                   />
-                  <div className="flex flex-col gap-10 px-5 bg-white h-full justify-center">
+                  <div className="flex flex-col gap-3 px-5 bg-white h-full justify-center">
                     <div className="flex flex-col gap-2">
                       <Typography className=" text-[#354B99] text-2xl font-semibold">
                         Lorem ipsum dolor sit amet
@@ -76,7 +81,7 @@ const TinTucSection = () => {
                     preview={false}
                     className="h-full"
                   />
-                  <div className="flex flex-col gap-10 px-5 bg-white h-full justify-center">
+                  <div className="flex flex-col gap-3 px-5 bg-white h-full justify-center">
                     <div className="flex flex-col gap-2">
                       <Typography className=" text-[#354B99] text-2xl font-semibold">
                         Lorem ipsum dolor sit amet
@@ -106,7 +111,7 @@ const TinTucSection = () => {
                     preview={false}
                     className="h-full"
                   />
-                  <div className="flex flex-col gap-10 px-5 bg-white h-full justify-center">
+                  <div className="flex flex-col gap-3 px-5 bg-white h-full justify-center">
                     <div className="flex flex-col gap-2">
                       <Typography className=" text-[#354B99] text-2xl font-semibold">
                         Lorem ipsum dolor sit amet
