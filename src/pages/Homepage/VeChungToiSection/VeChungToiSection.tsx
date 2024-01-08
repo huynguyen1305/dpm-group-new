@@ -1,11 +1,34 @@
 import { cn } from "@/utils/twClassname";
 import styles from "./VeChungToiSection.module.scss";
 import { Typography } from "antd";
+import backgroundHomepage from "@/assets/images/homepage-background.png";
 
 const VeChungToiSection = () => {
   return (
     <section className="h-full w-full bg-[#fff] p-10 flex">
-      <div className="w-[15%] bg-inherit"></div>
+      <div className="w-[25%] bg-inherit relative">
+        <div
+          className={cn(
+            styles.rotate,
+            "border-[4px] border-[#17275D] w-[1000px] h-[300px] rounded-[50%] z-0 absolute top-[250px] left-[-100px]"
+          )}
+        ></div>
+        <img
+          alt="img"
+          src={backgroundHomepage}
+          className="w-full max-w-[426px] h-full max-h-[400px] rounded-full z-10 absolute top-[100px] left-[50px] border-[4px] border-[#FF3030]"
+        />
+        <img
+          alt="img"
+          src={backgroundHomepage}
+          className="w-full max-w-[250px] h-full max-h-[250px] rounded-full z-10 absolute top-[475px] left-[300px] border-[4px] border-[#E7CF1E]"
+        />
+        <img
+          alt="img"
+          src={backgroundHomepage}
+          className="w-full max-w-[300px] h-full max-h-[300px] rounded-full z-10 absolute top-[225px] left-[500px] border-[4px] border-[#2ED72E]"
+        />
+      </div>
       <div className={cn(styles.corner_top_curved, "w-[85%] relative")}>
         <div className="absolute w-full right-[20%] top-[30vh] flex flex-col gap-10 h-full">
           <Typography className="text-[60px] font-extrabold">

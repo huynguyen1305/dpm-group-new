@@ -7,7 +7,7 @@ import ListSectionBar from "@/components/ListSectionBar/ListSectionBar";
 import TinTucSection from "./TinTucSection";
 import LinhVucSection from "./LinhVucSection";
 import DuAnSection from "./DuAnSection";
-import FooterSection from "./FooterSection";
+import FooterSection from "../../components/FooterSection";
 
 // https://github.com/VikLiegostaiev/react-page-scroller/tree/master
 
@@ -23,6 +23,18 @@ const homeSections = [
   {
     name: "Tin tuc section",
     href: "#tin-tuc",
+  },
+  {
+    name: "Linh vuc section",
+    href: "#linh-vuc",
+  },
+  {
+    name: "Du an section",
+    href: "#du-an",
+  },
+  {
+    name: "Footer section",
+    href: "#footer",
   },
 ];
 

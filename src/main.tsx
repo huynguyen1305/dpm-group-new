@@ -13,6 +13,7 @@ import { antdTheme } from "@/configs/antdTheme";
 import "@/configs/global.scss";
 import GioiThieuPage from "./pages/GioiThieuPage/GioiThieuPage";
 import HomePage from "./pages/Homepage/HomePage";
+import TinTucPage from "./pages/TinTucPage/TinTucPage";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/gioi-thieu",
         element: <GioiThieuPage />,
+      },
+      {
+        path: "/tin-tuc",
+        element: <TinTucPage />,
       },
       // {
       //   path: "/linh-vuc-hoat-dong",

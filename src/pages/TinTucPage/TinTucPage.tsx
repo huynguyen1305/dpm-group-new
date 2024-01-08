@@ -1,5 +1,15 @@
+import FooterSection from "@/components/FooterSection";
+import BannerSection from "./BannerSection";
+import GridSection from "./GridSection";
+
 const TinTucPage = () => {
-  return <div>TinTucPage</div>;
+  return (
+    <div className="w-full h-full relative">
+      <BannerSection />
+      <GridSection />
+      <FooterSection />
+    </div>
+  );
 };
 
 export default TinTucPage;

@@ -4,3 +4,7 @@ $color: #354b99;
   border-color: transparent transparent $color transparent;
   border-width: 0 0 90vh 40vw;
 }
+
+.rotate {
+  transform: rotate(-45deg);
+}
