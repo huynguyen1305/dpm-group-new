@@ -1,7 +1,7 @@
 import backgroundCustomer from "@/assets/images/bg-home-page-tin-tuc.png";
 import portrait from "@/assets/images/construct-bg-tin-tuc.png";
 import { Carousel, Typography } from "antd";
-import "./CustomerSection.scss";
+import styles from "./CustomerSection.module.scss";
 
 const CustomerSection = () => {
   return (
@@ -24,41 +24,42 @@ const CustomerSection = () => {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat null
           </Typography>
         </div>
-        <Carousel
-          autoplay
-          slidesToShow={4}
-          slidesToScroll={1}
-          dots
-          infinite
-          adaptiveHeight
-          style={{ width: "100%", height: "300px" }}
-        >
-          <img
-            src={portrait}
-            alt="portrait"
-            className="w-full h-full rounded-[100%] max-w-[250px]"
-          />
-          <img
-            src={portrait}
-            alt="portrait"
-            className="w-full h-full rounded-[100%] max-w-[250px]"
-          />
-          <img
-            src={portrait}
-            alt="portrait"
-            className="w-full h-full rounded-[100%] max-w-[250px]"
-          />
-          <img
-            src={portrait}
-            alt="portrait"
-            className="w-full h-full rounded-[100%] max-w-[250px]"
-          />
-          <img
-            src={portrait}
-            alt="portrait"
-            className="w-full h-full rounded-[100%] max-w-[250px]"
-          />
-        </Carousel>
+        <div className={styles.carousel_css}>
+          <Carousel
+            autoplay
+            slidesToShow={4}
+            slidesToScroll={1}
+            dots
+            infinite
+            style={{ width: "100%", height: "300px" }}
+          >
+            <img
+              src={portrait}
+              alt="portrait"
+              className="w-full rounded-[100%] max-w-[250px] h-[250px]"
+            />
+            <img
+              src={portrait}
+              alt="portrait"
+              className="w-full rounded-[100%] max-w-[250px] h-[250px]"
+            />
+            <img
+              src={portrait}
+              alt="portrait"
+              className="w-full rounded-[100%] max-w-[250px] h-[250px]"
+            />
+            <img
+              src={portrait}
+              alt="portrait"
+              className="w-full rounded-[100%] max-w-[250px] h-[250px]"
+            />
+            <img
+              src={portrait}
+              alt="portrait"
+              className="w-full rounded-[100%] max-w-[250px] h-[250px]"
+            />
+          </Carousel>
+        </div>
       </div>
     </div>
   );
