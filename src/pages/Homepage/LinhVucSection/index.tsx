@@ -6,69 +6,63 @@ import { cn } from "@/utils/twClassname";
 
 const LinhVucSection = () => {
   return (
-    <div
-      className="w-full h-full bg-no-repeat bg-cover flex flex-col justify-center items-center"
-      style={{
-        backgroundImage: `url(${backgroundHomepage})`,
-      }}
-    >
-      <div className="container flex flex-col gap-14">
-        <Typography className="text-[60px] font-extrabold">
-          | LĨNH VỰC HOẠT ĐỘNG
-        </Typography>
-        <Typography className="text-xl font-light">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Typography>
-        <Row gutter={[0, 0]} className="mt-10">
-          <Col span={6} className="">
-            <img
-              alt="img"
-              src={cardImage1}
-              className={cn(
-                styles.trapezoid_image,
-                "w-full h-full max-h-[400px]"
-              )}
-            />
-          </Col>
-          <Col span={6} className="mt-12">
-            <img
-              alt="img"
-              src={cardImage1}
-              className={cn(
-                styles.trapezoid_image,
-                "w-full h-full max-h-[400px]"
-              )}
-            />
-          </Col>
-          <Col span={6} className="">
-            <img
-              alt="img"
-              src={cardImage1}
-              className={cn(
-                styles.trapezoid_image,
-                "w-full h-full max-h-[400px]"
-              )}
-            />
-          </Col>
-          <Col span={6} className="mt-12">
-            <img
-              alt="img"
-              src={cardImage1}
-              className={cn(
-                styles.trapezoid_image,
-                "w-full h-full max-h-[400px]"
-              )}
-            />
-          </Col>
-        </Row>
+    <section className="w-full h-full pt-[80px]">
+      <div
+        className="w-full h-full bg-no-repeat bg-cover flex flex-col px-[80px]"
+        style={{
+          backgroundImage: `url(${backgroundHomepage})`,
+        }}
+      >
+        <div className="container flex flex-col gap-14">
+          <Typography className="text-[8vh] font-extrabold">
+            | LĨNH VỰC HOẠT ĐỘNG
+          </Typography>
+
+          <Row gutter={[0, 0]} className="mt-10">
+            <Col span={6} className="">
+              <img
+                alt="img"
+                src={cardImage1}
+                className={cn(
+                  styles.trapezoid_image,
+                  "w-full h-full max-h-[400px]"
+                )}
+              />
+            </Col>
+            <Col span={6} className="mt-12">
+              <img
+                alt="img"
+                src={cardImage1}
+                className={cn(
+                  styles.trapezoid_image,
+                  "w-full h-full max-h-[400px]"
+                )}
+              />
+            </Col>
+            <Col span={6} className="">
+              <img
+                alt="img"
+                src={cardImage1}
+                className={cn(
+                  styles.trapezoid_image,
+                  "w-full h-full max-h-[400px]"
+                )}
+              />
+            </Col>
+            <Col span={6} className="mt-12">
+              <img
+                alt="img"
+                src={cardImage1}
+                className={cn(
+                  styles.trapezoid_image,
+                  "w-full h-full max-h-[400px]"
+                )}
+              />
+            </Col>
+          </Row>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -2,7 +2,8 @@ $color: #354b99;
 
 .corner_top_curved {
   border-color: transparent transparent $color transparent;
-  border-width: 0 0 90vh 40vw;
+  border-width: 0 0 calc(100vh - 160px) 25vw;
+  
 }
 
 .rotate {

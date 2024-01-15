@@ -51,22 +51,22 @@ const HomePage = () => {
 
   // TO-DO: add ListSectionBar
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative bg-[#354B99]">
       <ReactPageScroller
         pageOnChange={handlePageChange}
         onBeforePageScroll={handleBeforePageChange}
         customPageNumber={currentPage}
-        containerHeight={"100vh"}
+        // containerHeight={"100vh"}
       >
         <BannerSection />
         <VeChungToiSection />
-        <TinTucSection />
         <LinhVucSection />
+        <TinTucSection />
         <DuAnSection />
         <FooterSection />
       </ReactPageScroller>
 
-      <div style={{ position: "absolute", right: "2rem", top: "100px" }}>
+      <div style={{ position: "absolute", right: "2.5rem", top: "100px" }}>
         <ListSectionBar
           listSection={homeSections}
           handlePageChange={handlePageChange}

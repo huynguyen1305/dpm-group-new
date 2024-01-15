@@ -1,3 +1,5 @@
+$params : true;
+
 .headerWrapper{
     position: fixed;
     inset: 0;
@@ -6,8 +8,7 @@
     width: 100%;
     height: 80px;
 
-    background: linear-gradient(180deg, #354B99 0%, rgba(0, 0, 0, 0) 100%);
-    box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background: rgba(#354B99, 1);
 
     display: flex;
     align-items: center;
@@ -15,3 +16,45 @@
 
     color: white;
 }
+
+
+
+.navItem {
+    position: relative;
+    color:  black;
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 1rem 1rem 1rem 0;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Dosis', sans-serif;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      background: black;
+      width: 0;
+      border-radius: 100px;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    &:hover {
+      color:black;
+      &::after {
+        width: 100%;
+      }
+    }
+  
+    &.active {
+      color: black;
+      font-weight: 600;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
