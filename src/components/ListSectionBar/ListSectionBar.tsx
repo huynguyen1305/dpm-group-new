@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Typography } from "antd";
 
 type Props = {
   listSection: {
@@ -13,24 +13,26 @@ const ListSectionBar = ({
   handlePageChange,
   currentPage,
 }: Props) => {
-  const location = useLocation();
-  console.log("location", location, currentPage);
   return (
     <>
       {listSection &&
         listSection.length > 0 &&
         listSection.map((item, idx) => (
-          <div
-            className="bg-slate-400 p-4"
+          <Typography
+            className="p-4 hover:text-red-500 cursor-pointer"
             key={item.href}
             onClick={() => handlePageChange(idx)}
             style={{
               cursor: "pointer",
-              color: currentPage === idx ? "red" : "",
+              color: currentPage === idx ? "#EF4444" : "",
+              fontSize: currentPage === idx ? "5vh" : "3vh",
+              fontWeight: currentPage === idx ? "500" : "normal",
+              transition: "all 0.3s ease",
+              textAlign: "center",
             }}
           >
-            {idx + 1}
-          </div>
+            0{idx + 1}
+          </Typography>
         ))}
     </>
   );

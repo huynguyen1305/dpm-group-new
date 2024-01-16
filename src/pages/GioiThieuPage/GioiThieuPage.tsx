@@ -56,7 +56,7 @@ const GioiThieuPage = () => {
   };
 
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative bg-[#354B99]">
       <ReactPageScroller
         pageOnChange={handlePageChange}
         onBeforePageScroll={handleBeforePageChange}

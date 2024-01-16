@@ -1,4 +1,4 @@
-import { Col, Flex, Image, Row, Typography } from "antd";
+import { Typography } from "antd";
 import backgroundHomepage from "@/assets/images/bg-home-page-tin-tuc.png";
 import cardImage1 from "@/assets/images/card-image-1.png";
 import cardImage2 from "@/assets/images/card-image-2.png";
@@ -13,55 +13,55 @@ const TinTucSection = () => {
           backgroundImage: `url(${backgroundHomepage})`,
         }}
       >
-        <div className="container flex flex-col w-full h-full">
+        <div className="container w-full h-full flex flex-col">
           <Typography className="text-[8vh] font-extrabold text-center">
             | TIN TỨC
           </Typography>
-          <Flex items="center" gap={40} className="w-full h-full p-10">
-            <Flex vertical className="w-2/5 ">
-              <div className="h-[70%]">
-                <img alt="img" src={cardImage1} className="w-full h-full" />
-              </div>
-              <Flex
-                vertical
-                className="bg-white p-4 h-[30%] w-full justify-around"
-              >
-                <Typography className="text-2xl font-semibold text-[#354B99]">
-                  Lorem ipsum dolor sit amet
-                </Typography>
-                <Typography className="text-xl text-[#354B99]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, q
-                </Typography>
-                <div className="w-fit flex items-center cursor-pointer">
-                  <Typography className="text-base font-extrabold text-[#354B99]">
-                    READ MORE
-                  </Typography>
-                  <ArrowRightOutlined style={{ color: "#354B99" }} />
+          <div className="flex w-full h-full pb-10 justify-center">
+            <div className="w-2/5 h-full px-4">
+              <div className="flex flex-col w-full h-full">
+                <div className="w-full h-full">
+                  <img alt="img" src={cardImage1} className="w-full h-full" />
                 </div>
-              </Flex>
-            </Flex>
-            <Row gutter={[20, 20]} className="w-3/5 h-full mt-2" align="top">
-              <Col span={24}>
-                <Flex>
-                  <div className="flex items-center w-full">
-                    <Image
+                <div className="w-full h-full bg-white flex flex-col justify-around px-5 max-h-[30%]">
+                  <Typography className=" text-[#354B99] text-2xl font-semibold">
+                    Lorem ipsum dolor sit amet
+                  </Typography>
+
+                  <Typography className=" text-xl text-[#354B99]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                  </Typography>
+
+                  <div className="w-fit flex items-center gap-5 cursor-pointer">
+                    <Typography className="text-base font-extrabold text-[#354B99] ">
+                      READ MORE
+                    </Typography>
+                    <ArrowRightOutlined style={{ color: "#354B99" }} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-3/5 h-full flex flex-col gap-4">
+              <div className="w-full h-full">
+                <div className="flex w-full h-full">
+                  <div className="">
+                    <img
                       src={cardImage2}
                       alt="img"
-                      preview={false}
-                      className="h-full"
+                      className="w-full h-full object-cover"
                     />
-                    <div className="flex flex-col gap-3 px-5 bg-white h-full justify-center">
-                      <div className="flex flex-col gap-2">
-                        <Typography className=" text-[#354B99] text-2xl font-semibold">
-                          Lorem ipsum dolor sit amet
-                        </Typography>
-                        <Typography className=" text-xl text-[#354B99]">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore
-                        </Typography>
-                      </div>
+                  </div>
+                  <div className="bg-white max-w-[78%] h-full justify-around">
+                    <div className="flex flex-col w-full h-full justify-around px-5">
+                      <Typography className=" text-[#354B99] text-2xl font-semibold">
+                        Lorem ipsum dolor sit amet aaaaaaa11111zxczxc
+                      </Typography>
+
+                      <Typography className=" text-xl text-[#354B99]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore
+                      </Typography>
 
                       <div className="w-fit flex items-center gap-5 cursor-pointer">
                         <Typography className="text-base font-extrabold text-[#354B99] ">
@@ -71,27 +71,27 @@ const TinTucSection = () => {
                       </div>
                     </div>
                   </div>
-                </Flex>
-              </Col>
-              <Col span={24}>
-                <Flex>
-                  <div className="flex items-center w-full">
-                    <Image
+                </div>
+              </div>
+              <div className="w-full h-full">
+                <div className="flex w-full h-full">
+                  <div className="">
+                    <img
                       src={cardImage2}
                       alt="img"
-                      preview={false}
-                      className="h-full"
+                      className="w-full h-full object-cover"
                     />
-                    <div className="flex flex-col gap-3 px-5 bg-white h-full justify-center">
-                      <div className="flex flex-col gap-2">
-                        <Typography className=" text-[#354B99] text-2xl font-semibold">
-                          Lorem ipsum dolor sit amet
-                        </Typography>
-                        <Typography className=" text-xl text-[#354B99]">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore
-                        </Typography>
-                      </div>
+                  </div>
+                  <div className="bg-white max-w-[78%] h-full justify-around">
+                    <div className="flex flex-col w-full h-full justify-around px-5">
+                      <Typography className=" text-[#354B99] text-2xl font-semibold">
+                        Lorem ipsum dolor sit amet aaaaaaa11111zxczxc
+                      </Typography>
+
+                      <Typography className=" text-xl text-[#354B99]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore
+                      </Typography>
 
                       <div className="w-fit flex items-center gap-5 cursor-pointer">
                         <Typography className="text-base font-extrabold text-[#354B99] ">
@@ -101,27 +101,27 @@ const TinTucSection = () => {
                       </div>
                     </div>
                   </div>
-                </Flex>
-              </Col>
-              <Col span={24}>
-                <Flex>
-                  <div className="flex items-center w-full">
-                    <Image
+                </div>
+              </div>
+              <div className="w-full h-full">
+                <div className="flex w-full h-full">
+                  <div className="">
+                    <img
                       src={cardImage2}
                       alt="img"
-                      preview={false}
-                      className="h-full"
+                      className="w-full h-full object-cover"
                     />
-                    <div className="flex flex-col gap-3 px-5 bg-white h-full justify-center">
-                      <div className="flex flex-col gap-2">
-                        <Typography className=" text-[#354B99] text-2xl font-semibold">
-                          Lorem ipsum dolor sit amet
-                        </Typography>
-                        <Typography className=" text-xl text-[#354B99]">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore
-                        </Typography>
-                      </div>
+                  </div>
+                  <div className="bg-white max-w-[78%] h-full justify-around">
+                    <div className="flex flex-col w-full h-full justify-around px-5">
+                      <Typography className=" text-[#354B99] text-2xl font-semibold">
+                        Lorem ipsum dolor sit amet aaaaaaa11111zxczxc
+                      </Typography>
+
+                      <Typography className=" text-xl text-[#354B99]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore
+                      </Typography>
 
                       <div className="w-fit flex items-center gap-5 cursor-pointer">
                         <Typography className="text-base font-extrabold text-[#354B99] ">
@@ -131,10 +131,10 @@ const TinTucSection = () => {
                       </div>
                     </div>
                   </div>
-                </Flex>
-              </Col>
-            </Row>
-          </Flex>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

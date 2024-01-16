@@ -56,7 +56,6 @@ const HomePage = () => {
         pageOnChange={handlePageChange}
         onBeforePageScroll={handleBeforePageChange}
         customPageNumber={currentPage}
-        // containerHeight={"100vh"}
       >
         <BannerSection />
         <VeChungToiSection />
@@ -66,7 +65,16 @@ const HomePage = () => {
         <FooterSection />
       </ReactPageScroller>
 
-      <div style={{ position: "absolute", right: "2.5rem", top: "100px" }}>
+      <div
+        style={{
+          position: "absolute",
+          right: "1rem",
+          top: "50%",
+          height: "auto",
+          transform: "translateY(-50%)",
+          zIndex: 1000,
+        }}
+      >
         <ListSectionBar
           listSection={homeSections}
           handlePageChange={handlePageChange}
