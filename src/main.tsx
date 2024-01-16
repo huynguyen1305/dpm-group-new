@@ -13,6 +13,7 @@ import { antdTheme } from "@/configs/antdTheme";
 import GioiThieuPage from "./pages/GioiThieuPage/GioiThieuPage";
 import HomePage from "./pages/Homepage/HomePage";
 import TinTucPage from "./pages/TinTucPage/TinTucPage";
+import ThietKePage from "./pages/ThietKePage";
 
 import "@/configs/i18n/i18n";
 import "@/configs/global.scss";
@@ -40,10 +41,10 @@ const router = createBrowserRouter([
       //   path: "/linh-vuc-hoat-dong",
       //   element: <ActivePage />,
       // },
-      // {
-      //   path: "/linh-vuc-hoat-dong/thiet-ke",
-      //   element: <ThietKeNew />,
-      // },
+      {
+        path: "/linh-vuc-hoat-dong/thiet-ke",
+        element: <ThietKePage />,
+      },
       // {
       //   path: "/linh-vuc-hoat-dong/san-xuat",
       //   element: <SanXuatNew />,
