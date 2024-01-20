@@ -1,5 +1,6 @@
 import backgroundGT from "@/assets/images/bg-gioi-thieu.png";
 import { Typography } from "antd";
+import { Link } from "react-router-dom";
 
 const BannerSection = () => {
   return (
@@ -11,15 +12,21 @@ const BannerSection = () => {
     >
       <div className="container flex flex-col h-full pt-[30vh] pb-10 justify-between pl-[7.5%]">
         <div className="flex flex-col gap-2">
-          <Typography className="font-extrabold text-8xl">
+          <Typography className="font-extrabold text-[8vh]">
             GIỚI THIỆU
           </Typography>
           <div className="flex items-center gap-2">
-            <Typography className="text-2xl font-extralight">
-              Trang chủ
-            </Typography>
+            <Link to="/">
+              <Typography className="text-2xl font-extralight">
+                Trang chủ
+              </Typography>
+            </Link>
             <Typography className="text-2xl font-medium">{">"}</Typography>
-            <Typography className="text-2xl font-medium">Giới thiệu</Typography>
+            <Link to="/gioi-thieu">
+              <Typography className="text-2xl font-medium">
+                Giới thiệu
+              </Typography>
+            </Link>
           </div>
         </div>
       </div>

@@ -61,7 +61,6 @@ const GioiThieuPage = () => {
         pageOnChange={handlePageChange}
         onBeforePageScroll={handleBeforePageChange}
         customPageNumber={currentPage}
-        containerHeight={"100vh"}
       >
         <BannerSection />
         <ThongDiepSection />
@@ -73,7 +72,16 @@ const GioiThieuPage = () => {
         <FooterSection />
       </ReactPageScroller>
 
-      <div style={{ position: "absolute", right: "2rem", top: "100px" }}>
+      <div
+        style={{
+          position: "absolute",
+          right: "1rem",
+          top: "50%",
+          height: "auto",
+          transform: "translateY(-50%)",
+          zIndex: 1000,
+        }}
+      >
         <ListSectionBar
           listSection={gioiThieuSections}
           handlePageChange={handlePageChange}

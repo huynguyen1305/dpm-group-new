@@ -1,6 +1,6 @@
 import backgroundHomepage from "@/assets/images/bg-home-page-linh-vuc.png";
 import cardImage1 from "@/assets/images/card-image-3.jpeg";
-import { Col, Row, Typography } from "antd";
+import { Col, Typography } from "antd";
 import styles from "./LinhVucSection.module.scss";
 import { cn } from "@/utils/twClassname";
 
@@ -18,7 +18,7 @@ const LinhVucSection = () => {
             | LĨNH VỰC HOẠT ĐỘNG
           </Typography>
 
-          <Row gutter={[0, 0]} className="flex-1 my-10">
+          <div className="flex h-[80%] my-10">
             <Col span={6} className="mb-12">
               <div
                 className={cn(styles.trapezoid_image, "w-full h-full relative")}
@@ -83,7 +83,7 @@ const LinhVucSection = () => {
                 </Typography>
               </div>
             </Col>
-          </Row>
+          </div>
         </div>
       </div>
     </section>
