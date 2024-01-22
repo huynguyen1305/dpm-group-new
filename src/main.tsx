@@ -14,6 +14,7 @@ import GioiThieuPage from "./pages/GioiThieuPage/GioiThieuPage";
 import HomePage from "./pages/Homepage/HomePage";
 import TinTucPage from "./pages/TinTucPage/TinTucPage";
 import ThietKePage from "./pages/ThietKePage";
+import ActivePage from "./pages/ActivePage/ActivePage";
 
 import "@/configs/i18n/i18n";
 import "@/configs/global.scss";
@@ -37,10 +38,10 @@ const router = createBrowserRouter([
         path: "/tin-tuc",
         element: <TinTucPage />,
       },
-      // {
-      //   path: "/linh-vuc-hoat-dong",
-      //   element: <ActivePage />,
-      // },
+      {
+        path: "/linh-vuc-hoat-dong",
+        element: <ActivePage />,
+      },
       {
         path: "/linh-vuc-hoat-dong/thiet-ke",
         element: <ThietKePage />,

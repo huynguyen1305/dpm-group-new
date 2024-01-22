@@ -24,7 +24,7 @@ const HistorySection = () => {
             </Typography>
           </div>
           <div className="flex justify-center flex-col w-[90%] h-full mx-auto py-4">
-            <div className="w-full mx-auto flex justify-between">
+            <div className="w-full mx-auto flex justify-between mx-[-8px]">
               <div className="flex flex-col justify-center text-center gap-2 w-[20%] ml-[12.5%]">
                 <Typography className="text-2xl font-extrabold">
                   2010
@@ -56,7 +56,7 @@ const HistorySection = () => {
               <div className="w-8 h-8 rounded-[100%] bg-white absolute top-[-17px] right-0 left-0 mx-auto border-[3px] border-black" />
               <div className="w-6 h-6 rounded-[100%] bg-white absolute top-[-13px] right-0" />
             </div>
-            <div className="w-full mx-auto flex justify-between">
+            <div className="w-full mx-auto flex justify-between px-2">
               <img
                 alt="img"
                 src={image}
