@@ -3,7 +3,7 @@ import { Col, Typography } from "antd";
 
 import styles from "./ActivePage.module.scss";
 
-import backgroundHomepage from "@/assets/images/homepage-background.png";
+import backgroundHomepage from "@/assets/images/card-image-3.jpeg";
 import { cn } from "@/utils/twClassname";
 import { Link } from "react-router-dom";
 
@@ -34,19 +34,23 @@ const BannerSection1 = () => {
                   | Lĩnh vực hoạt động
                 </Typography>
                 <div className="flex items-center gap-2">
-                  <Typography className="text-2xl font-extralight">
-                    Trang chủ
-                  </Typography>
+                  <Link to={"/"}>
+                    <Typography className="text-2xl font-extralight">
+                      Trang chủ
+                    </Typography>
+                  </Link>
                   <Typography className="text-2xl font-medium">
                     {">"}
                   </Typography>
-                  <Typography className="text-2xl font-medium">
-                    Lĩnh vực hoạt động
-                  </Typography>
+                  <Link to={"/linh-vuc-hoat-dong"}>
+                    <Typography className="text-2xl font-medium">
+                      Lĩnh vực hoạt động
+                    </Typography>
+                  </Link>
                 </div>
 
                 {/* start */}
-                <div className="flex h-[100%] my-12 mx-8">
+                <div className="flex h-[65%] my-12 mx-8">
                   <Col span={6} className="mb-12">
                     <Link to="/linh-vuc-hoat-dong/thiet-ke">
                       <div

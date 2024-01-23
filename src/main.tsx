@@ -19,6 +19,11 @@ import ActivePage from "./pages/ActivePage/ActivePage";
 import "@/configs/i18n/i18n";
 import "@/configs/global.scss";
 import SanXuatPage from "./pages/SanXuatPage/SanXuatPage";
+import VanChuyenPage from "./pages/VanChuyenPage/VanChuyenPage";
+import LapDungPage from "./pages/LapDungPage/LapDungPage";
+import DuAnPage from "./pages/DuAnPage/DuAnPage";
+import DuAnDetail from "./pages/DuAnDetail/DuAnDetail";
+import LienHePage from "./pages/LienHePage/LienHePage";
 
 const router = createBrowserRouter([
   {
@@ -51,22 +56,26 @@ const router = createBrowserRouter([
         path: "/linh-vuc-hoat-dong/san-xuat",
         element: <SanXuatPage />,
       },
-      // {
-      //   path: "/linh-vuc-hoat-dong/van-chuyen",
-      //   element: <VanChuyenNew />,
-      // },
-      // {
-      //   path: "/linh-vuc-hoat-dong/lap-dung",
-      //   element: <LapDungNew />,
-      // },
-      // {
-      //   path: "/du-an",
-      //   element: <DuAnPage />,
-      // },
-      // {
-      //   path: "/du-an/:value",
-      //   element: <DuAnDetail />,
-      // },
+      {
+        path: "/linh-vuc-hoat-dong/van-chuyen",
+        element: <VanChuyenPage />,
+      },
+      {
+        path: "/linh-vuc-hoat-dong/lap-dung",
+        element: <LapDungPage />,
+      },
+      {
+        path: "/du-an",
+        element: <DuAnPage />,
+      },
+      {
+        path: "/du-an/:value",
+        element: <DuAnDetail />,
+      },
+      {
+        path: "/lien-he",
+        element: <LienHePage />,
+      },
     ],
   },
 ]);

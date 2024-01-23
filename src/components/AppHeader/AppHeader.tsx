@@ -25,6 +25,10 @@ const navBars = [
     path: "/linh-vuc-hoat-dong",
   },
   {
+    name: "Tin Tức",
+    path: "/tin-tuc",
+  },
+  {
     name: "Các Dự Án",
     path: "/du-an",
   },

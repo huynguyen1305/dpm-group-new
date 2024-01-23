@@ -43,9 +43,11 @@ const VeChungToiSection = () => {
         <div className={cn("w-[70%] relative")}>
           <div className={cn(styles.corner_top_curved, "w-[100%]")}></div>
           <div className="absolute w-[50%] h-full right-[12.5%] top-[10%] flex flex-col gap-6">
-            <Typography className="text-[8vh] font-extrabold">
-              | VỀ CHÚNG TÔI
-            </Typography>
+            <Link to="/gioi-thieu">
+              <Typography className="text-[8vh] font-extrabold">
+                | VỀ CHÚNG TÔI
+              </Typography>
+            </Link>
             <Typography className="text-[2vh] text-white">
               Từ ngày thành lập 2010 và phát triển đến nay, DPM đã vượt qua hàng
               ngàn thách thức, khắc phục mọi khó khăn để khẳng định mình là một

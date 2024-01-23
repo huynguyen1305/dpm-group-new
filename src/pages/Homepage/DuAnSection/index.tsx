@@ -144,9 +144,11 @@ const DuAnSection = () => {
   return (
     <section className="w-full h-full pt-[80px]">
       <div className="w-full mx-auto h-full pb-10 px-12">
-        <Typography className="text-white text-[8vh] font-extrabold text-center">
-          | DỰ ÁN NỔI BẬT
-        </Typography>
+        <Link to={"/du-an"}>
+          <Typography className="text-white text-[8vh] font-extrabold text-center">
+            | DỰ ÁN NỔI BẬT
+          </Typography>
+        </Link>
         <div className="w-[95%] h-[90%] mx-auto pb-10">
           <div className={cn("swiperWrapper_small", "rounded-2xl p-2")}>
             <Swiper

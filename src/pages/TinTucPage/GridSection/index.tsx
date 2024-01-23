@@ -5,17 +5,9 @@ import cardImage1 from "@/assets/images/card-image-1.png";
 
 const GridSection = () => {
   return (
-    <div className="w-full h-full bg-[#354b99] pt-[10vh]">
+    <div className="w-full h-full bg-[#354b99]">
       <div className="flex flex-col gap-10 px-[10vw]">
-        <Typography className="text-5xl font-extrabold max-w-[600px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incid
-        </Typography>
-        <div className="flex items-center gap-2">
-          <Typography className="text-2xl font-extrabold">READ MORE</Typography>
-          <ArrowRightOutlined style={{ color: "#fff" }} />
-        </div>
-        <Typography className="text-6xl font-extrabold mt-10">
+        <Typography className="text-[8vh] font-extrabold mt-10">
           | TIN TỨC
         </Typography>
         <Row justify="center" align="middle" gutter={[120, 120]}>

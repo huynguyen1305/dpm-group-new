@@ -4,7 +4,7 @@ import { useState } from "react";
 import ReactPageScroller from "react-page-scroller";
 import BannerSection1 from "./BannerSection1/BannerSection1";
 
-const vanChuyenSections = [
+const duAnSections = [
   {
     name: "Banner section",
     href: "#banner",
@@ -16,7 +16,7 @@ const vanChuyenSections = [
   },
 ];
 
-const vanChuyenPage = () => {
+const DuAnPage = () => {
   const [currentPage, setCurrentPage] = useState(0);
   // Core change page here: handlePageChange
   const handlePageChange = (number: number) => {
@@ -48,7 +48,7 @@ const vanChuyenPage = () => {
         }}
       >
         <ListSectionBar
-          listSection={vanChuyenSections}
+          listSection={duAnSections}
           handlePageChange={handlePageChange}
           currentPage={currentPage}
         />
@@ -57,4 +57,4 @@ const vanChuyenPage = () => {
   );
 };
 
-export default vanChuyenPage;
+export default DuAnPage;
