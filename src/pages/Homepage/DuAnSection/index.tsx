@@ -4,7 +4,9 @@ import backgroundHomepage from "@/assets/images/homepage-background.png";
 
 import { Link } from "react-router-dom";
 import { Typography } from "antd";
-// import { IconArrowBarRight } from "@tabler/icons-react";
+
+import { cn } from "@/utils/twClassname";
+
 const DuAnSection = () => {
   const items = [
     {
@@ -146,7 +148,7 @@ const DuAnSection = () => {
           | DỰ ÁN NỔI BẬT
         </Typography>
         <div className="w-[95%] h-[90%] mx-auto pb-10">
-          <div className="swiperWrapper w-full h-full rounded-2xl p-2">
+          <div className={cn("swiperWrapper_small", "rounded-2xl p-2")}>
             <Swiper
               slidesPerView={1}
               spaceBetween={"-32%"}

@@ -18,6 +18,7 @@ import ActivePage from "./pages/ActivePage/ActivePage";
 
 import "@/configs/i18n/i18n";
 import "@/configs/global.scss";
+import SanXuatPage from "./pages/SanXuatPage/SanXuatPage";
 
 const router = createBrowserRouter([
   {
@@ -46,10 +47,10 @@ const router = createBrowserRouter([
         path: "/linh-vuc-hoat-dong/thiet-ke",
         element: <ThietKePage />,
       },
-      // {
-      //   path: "/linh-vuc-hoat-dong/san-xuat",
-      //   element: <SanXuatNew />,
-      // },
+      {
+        path: "/linh-vuc-hoat-dong/san-xuat",
+        element: <SanXuatPage />,
+      },
       // {
       //   path: "/linh-vuc-hoat-dong/van-chuyen",
       //   element: <VanChuyenNew />,

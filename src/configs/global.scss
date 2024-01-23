@@ -119,7 +119,25 @@ h6 {
   flex-direction: column;
 }
 
-.swiperWrapper {
+.swiper-button-prev {
+  user-select: none;
+  &::after {
+    content: "◄" !important;
+    color: white !important;
+    font-size: 2.5rem !important;
+  }
+}
+
+.swiper-button-next {
+  user-select: none;
+  &::after {
+    content: "►" !important;
+    color: white !important;
+    font-size: 2.5rem !important;
+  }
+}
+
+.swiperWrapper_small {
   width: 100%;
   height: 100%;
   cursor: grab;
@@ -142,24 +160,59 @@ h6 {
       transition: all 0.3s linear;
     }
   }
-}
-
-.swiper-button-prev {
-  left: 15% !important;
-  user-select: none;
-  &::after {
-    content: "◄" !important;
-    color: white !important;
-    font-size: 2.5rem !important;
+  & .swiper-button-prev {
+    left: 15% ;
+    user-select: none;
+    &::after {
+      content: "◄" !important;
+      color: white !important;
+      font-size: 2.5rem !important;
+    }
+  }
+  & .swiper-button-next {
+    right: 15% ;
+    user-select: none;
+    &::after {
+      content: "►" !important;
+      color: white !important;
+      font-size: 2.5rem !important;
+    }
   }
 }
 
-.swiper-button-next {
-  right: 15% !important;
-  user-select: none;
-  &::after {
-    content: "►" !important;
-    color: white !important;
-    font-size: 2.5rem !important;
+.swiperWrapper_full {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+
+  & .swiper-pagination {
+    bottom: 0;
+    left: 0;
+  }
+
+  & .swiper-pagination-bullet {
+    background: white;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+ 
+  & .swiper-button-prev {
+    left: 0px ;
+    user-select: none;
+    &::after {
+      content: "◄" !important;
+      color: white !important;
+      font-size: 2.5rem !important;
+    }
+  }
+  & .swiper-button-next {
+    right: 0px ;
+    user-select: none;
+    &::after {
+      content: "►" !important;
+      color: white !important;
+      font-size: 2.5rem !important;
+    }
   }
 }
